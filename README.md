@@ -1,10 +1,10 @@
-# 🍌 Bananas (BNNA) – Simple ERC-20 Token on Sepolia
+# Bananas (BNNA) – Simple ERC-20 Token on Sepolia
 
 A basic ERC-20 token written in Solidity, compiled and deployed with Remix IDE, and tested on the Ethereum **Sepolia** test network using MetaMask.
 
 > This token exists only on the Sepolia testnet and has no real-world value.
 
-## 📌 Deployment details
+## Deployment details
 
 | Item | Value |
 |---|---|
@@ -17,14 +17,14 @@ A basic ERC-20 token written in Solidity, compiled and deployed with Remix IDE, 
 | Deployment tx hash | [`0xbe990a5240e284f7f3481f565ea92344d079d8fac78786760f603e195e01edb4`](https://sepolia.etherscan.io/tx/0xbe990a5240e284f7f3481f565ea92344d079d8fac78786760f603e195e01edb4) |
 | Token transfer tx hash (10 BNNA) | [`0x86361bf359c4478ac4d224ebd77e49ceec078089c1d279350efedccfaf808058`](https://sepolia.etherscan.io/tx/0x86361bf359c4478ac4d224ebd77e49ceec078089c1d279350efedccfaf808058) |
 
-## 📂 Repository contents
+## Repository contents
 
 | File | Description |
 |---|---|
 | `SimpleToken.sol` | The Solidity source code of the Bananas ERC-20 token |
 | `README.md` | This file: project overview and setup instructions |
 
-## ⚙️ How the contract works
+## How the contract works
 
 The contract is like a shared notebook stored on the blockchain that records how many tokens each address owns.
 
@@ -38,7 +38,7 @@ The contract is like a shared notebook stored on the blockchain that records how
 
 Amounts use 18 decimals, like ETH, so **1 BNNA = 1,000,000,000,000,000,000** smallest units. For example, to send 10 BNNA you enter `10000000000000000000`.
 
-## 🚀 Setup instructions
+## Setup instructions
 
 ### Prerequisites
 - Google Chrome with the [MetaMask extension](https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
@@ -57,13 +57,13 @@ Amounts use 18 decimals, like ETH, so **1 BNNA = 1,000,000,000,000,000,000** sma
 7. **Verify balances**: call `balanceOf` for both accounts. The sender shows 999,990 BNNA and the receiver shows 10 BNNA.
 8. **Check on Etherscan**: search the contract address on [sepolia.etherscan.io](https://sepolia.etherscan.io) to see the deployment and the transfer.
 
-## ✅ Test results
+## Test results
 
 - Deployer (`0x9d76429C12b1560624f07fB314E5816C39B3E456`) received 1,000,000 BNNA at deployment.
 - 10 BNNA were transferred to the second wallet (`0x869f2EFa...4604d89f8`).
 - Final balances: deployer **999,990 BNNA**, second wallet **10 BNNA**.
 - Etherscan shows **2 holders** and **2 transfers** for the token.
 
-## 🔒 Security note
+## Security note
 
 Only Sepolia test ETH was used. No private keys or recovery phrases are stored in this repository. Never share yours.
